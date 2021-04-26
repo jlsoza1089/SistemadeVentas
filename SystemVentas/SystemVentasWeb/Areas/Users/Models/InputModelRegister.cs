@@ -20,7 +20,7 @@ namespace SystemVentasWeb.Areas.Users.Models
 
       [Required(ErrorMessage = "El campo telefono es obligatorio")]
       [DataType(DataType.PhoneNumber)]
-      [RegularExpression(@"^\(?([0-9){2})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{5})$",ErrorMessage ="<font color='red'>El formato telefono ingresado no es valido.")]
+      [RegularExpression(@"^\(?([0-9]{2})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{5})$",ErrorMessage ="<font color='red'>El formato telefono ingresado no es valido.")]
 
         public string PhoneNumber { get; set; }
 
