@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\NewFolder\**" />
+    <Content Remove="Areas\NewFolder\**" />
+    <EmbeddedResource Remove="Areas\NewFolder\**" />
+    <None Remove="Areas\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Areas\Users\Pages\Account\Index.cshtml" />
   </ItemGroup>
 
@@ -19,7 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\NewFolder\" />
     <Folder Include="Areas\Users\Data\" />
   </ItemGroup>
 

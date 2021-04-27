@@ -33,5 +33,8 @@ namespace SystemVentasWeb.Areas.Users.Models
         [StringLength(100,ErrorMessage = "El numero de caracteres de {0} de ser al menos {2}.", MinimumLength =6)]
         public string Password { get; set; }
 
+        [Required]
+        public string Role { get; set; }
+
     }
 }
