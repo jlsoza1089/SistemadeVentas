@@ -4,7 +4,17 @@
 // Write your JavaScript code.
 
 
+var principal = new Principal();
+
+
+
 var user = new User();
 var imageUser = (evt) => {
     user.archivo(evt, "imageUser");
 }
+
+$().ready(() => {
+    let URLactual = window.location.pathname;
+    principal.userLink(URLactual);
+
+});
